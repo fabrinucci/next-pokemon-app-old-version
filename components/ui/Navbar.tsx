@@ -20,14 +20,14 @@ export const Navbar = () => {
             <Image 
                 src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
                 alt="app icon"
-                width={70}
-                height={70}
+                width={ 70 }
+                height={ 70 }
             />
 
             <NextLink href="/" passHref>
                 <Link>
                     <Text color='white' h2>P</Text>
-                    <Text color='white' h3>okemon</Text>
+                    <Text color='white' h3>okémon</Text>
                 </Link>
             </NextLink>
 

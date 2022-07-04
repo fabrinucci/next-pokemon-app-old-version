@@ -14,12 +14,12 @@ export const Layout: FC<Props> = ({ children, title }) => {
   return (
       <>
         <Head>
-            <title>{ 'Pokemon | ' } { title || 'App' }</title>
+            <title>{ 'Pokémon | ' } { title || 'App' }</title>
             <meta name="author" content="Fabrizio Nucci" />
-            <meta name="description" content={`Information about ${ title }`} />
-            <meta name="keywords" content={ `${ title }, pokemon, pokedex`} />
+            <meta name="description" content={`Information about ${ title } | Pokédex`} />
+            <meta name="keywords" content={ `${ title?.toLowerCase }, pokémon, pokédex`} />
 
-            <meta property="og:title" content={`Information about ${ title }`} />
+            <meta property="og:title" content={`${ title } | Pokédex`}  />
             <meta property="og:description" content={`This is the page about ${ title }`} />
             <meta property="og:image" content={`${ origin }/img/banner.png`} />
         </Head>

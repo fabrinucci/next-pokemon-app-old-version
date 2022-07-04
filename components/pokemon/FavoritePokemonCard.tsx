@@ -14,19 +14,20 @@ export const FavoritePokemonCard: FC<Props> = ( { pokemonId } ) => {
     router.push(`/pokemon/${ pokemonId }`)
   }
 
+  const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${ pokemonId }.png`
 
   return (
     <Grid 
       key={ pokemonId } 
       onClick={ onFavoriteClicked }
-      xs={6} sm={3} md={2} xl={1}
+      xs={ 6 } sm={ 3 } md={ 2 } xl={ 1 }
     >
       <Card hoverable clickable>
         <Card.Image
-          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${ pokemonId }.svg`}
+          src={ url }
           alt={`Pokemon ${ pokemonId }`}
-          width={'100%'}
-          height={140}
+          width={ '100%' }
+          height={ 140 }
         />
       </Card>
     </Grid>

@@ -10,7 +10,7 @@ export const FavoritePokemon: FC<Props> = ({ pokemon }) => {
   return (
     <Grid.Container
       direction="row"
-      gap={2}
+      gap={ 2 }
       justify="flex-start"
     >
       {
